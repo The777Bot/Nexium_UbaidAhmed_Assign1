@@ -10,8 +10,9 @@
   {
     "topic": "focus",
     "quotes": [
-      "Focus is the Key for an Ideal work."
-      
+      "Focus is the key for an ideal work.",
+      "Concentrate all your thoughts upon the work in hand.",
+      "The successful warrior is the average man, with laser-like focus."
     ]
   },
   {
@@ -20,6 +21,30 @@
       "Push yourself, because no one else is going to do it for you.",
       "Great things never come from comfort zones.",
       "Success doesn’t just find you. You have to go out and get it."
+    ]
+  },
+  {
+    "topic": "leadership",
+    "quotes": [
+      "Leadership is the capacity to translate vision into reality.",
+      "A leader is one who knows the way, goes the way, and shows the way.",
+      "The art of leadership is saying no, not yes."
+    ]
+  },
+  {
+    "topic": "perseverance",
+    "quotes": [
+      "Perseverance is not a long race; it is many short races one after the other.",
+      "Through perseverance many people win success out of what seemed destined to be certain failure.",
+      "Perseverance is failing 19 times and succeeding the 20th."
+    ]
+  },
+  {
+    "topic": "creativity",
+    "quotes": [
+      "Creativity is intelligence having fun.",
+      "Creativity takes courage.",
+      "You can’t use up creativity. The more you use, the more you have."
     ]
   }
 ]
