@@ -1,6 +1,9 @@
+// app/layout.tsx
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
+import ThemeToggle from "@/components/ThemeToggle";
+import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Quote Generator",
@@ -18,15 +21,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </span>
             <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">
               by Ubaid Ahmed
+              <ThemeToggle />
             </span>
           </div>
         </header>
+
         <main className="max-w-2xl mx-auto px-4 py-8 flex-1 flex flex-col justify-center items-center w-full">
           {children}
         </main>
-        <footer className="w-full py-4 border-t bg-white/70 dark:bg-gray-900/70 text-center text-xs text-gray-500 dark:text-gray-400 mt-auto">
-          &copy; {new Date().getFullYear()} QuoteGen. All rights reserved.
-        </footer>
+
+        <Footer />
       </body>
     </html>
   );

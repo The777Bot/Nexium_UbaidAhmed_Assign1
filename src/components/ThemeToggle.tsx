@@ -3,33 +3,31 @@
 import { useState, useEffect } from "react";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState<"light" | "dark" | undefined>(undefined);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const stored = window.localStorage.getItem("theme");
-      if (stored) {
-        setTheme(stored);
-        document.documentElement.classList.toggle("dark", stored === "dark");
-      }
-    }
+    const stored = window.localStorage.getItem("theme") as "light" | "dark" | null;
+    const initial = stored || "light";
+    setTheme(initial);
+    document.documentElement.classList.toggle("dark", initial === "dark");
   }, []);
 
   const toggleTheme = () => {
+    if (!theme) return;
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem("theme", newTheme);
-      document.documentElement.classList.toggle("dark", newTheme === "dark");
-    }
+    window.localStorage.setItem("theme", newTheme);
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
+
+  if (!theme) return null;
 
   return (
     <button
       type="button"
       aria-label="Toggle theme"
       onClick={toggleTheme}
-      className="fixed bottom-6 right-6 z-50 p-3 rounded-full border border-blue-200 dark:border-blue-900 bg-white dark:bg-gray-900 text-blue-700 dark:text-blue-200 shadow-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition-all"
+      className="ml-3 p-2 rounded-full border border-blue-200 dark:border-blue-900 bg-white dark:bg-gray-900 text-blue-700 dark:text-blue-200 shadow hover:bg-blue-50 dark:hover:bg-gray-800 transition-all"
     >
       {theme === "dark" ? (
         <svg
