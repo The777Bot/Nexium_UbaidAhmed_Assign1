@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
 
 :root {
   --background: oklch(1 0 0);
@@ -38,7 +37,7 @@
   --sidebar-ring: oklch(0.705 0.015 286.067);
 }
 
-@theme inline {
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -127,9 +126,11 @@ body {
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    border-color: var(--border);
+    outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
   }
-  body {
+  /* body {
     @apply bg-background text-foreground;
-  }
+    Use standard CSS if needed, or handle Tailwind classes in your HTML/JSX
+  } */
 }

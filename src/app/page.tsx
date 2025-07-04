@@ -22,7 +22,7 @@ export default function Home() {
           </span>
           , or{" "}
           <span className="font-semibold text-blue-600 dark:text-blue-400">
-            focus
+            focus ...
           </span>
           .
         </p>
