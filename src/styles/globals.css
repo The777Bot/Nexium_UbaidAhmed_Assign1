@@ -134,3 +134,16 @@ body {
     Use standard CSS if needed, or handle Tailwind classes in your HTML/JSX
   } */
 }
+
+.blend {
+  background: linear-gradient(135deg, #fffbe6 0%, #fffde4 40%, #fff 70%, #fef9c3 100%);
+  color: #b45309;
+}
+
+.blend body {
+  background: transparent;
+}
+
+.blend .blend-text-black {
+  color: #000 !important;
+}

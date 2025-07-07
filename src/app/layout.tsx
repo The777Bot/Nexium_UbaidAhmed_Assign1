@@ -2,8 +2,8 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
-import ThemeToggle from "@/components/ThemeToggle";
 import Footer from "../components/Footer";
+import ThemeButton from "@/components/ThemeButton";
 
 export const metadata: Metadata = {
   title: "Quote Generator",
@@ -19,9 +19,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <span className="text-2xl font-extrabold tracking-tight text-blue-700 dark:text-blue-300">
               QuoteGen
             </span>
-            <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">
+            <span className="text-sm text-gray-500 dark:text-gray-400 font-medium flex items-center gap-2">
               by Ubaid Ahmed
-              <ThemeToggle />
+              <ThemeButton />
             </span>
           </div>
         </header>

@@ -11,7 +11,7 @@ export default function Home() {
             Quote Generator
           </span>
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-xl">
+        <p className="text-lg blend-text-black dark:text-gray-300 text-center max-w-xl">
           Instantly discover inspiring quotes by topic. Try{" "}
           <span className="font-semibold text-blue-600 dark:text-blue-400">
             success
