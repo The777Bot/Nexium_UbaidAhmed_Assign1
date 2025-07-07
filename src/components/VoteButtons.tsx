@@ -13,7 +13,6 @@ function getVoteKey(quote: string, author?: string) {
 
 export default function VoteButtons({ quote, author }: VoteButtonsProps) {
   const [vote, setVote] = useState<0 | 1 | -1>(0); // 1 = up, -1 = down, 0 = none
-  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const key = getVoteKey(quote, author);
