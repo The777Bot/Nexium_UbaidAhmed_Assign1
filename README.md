@@ -1,40 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Quote Generator App
 
-## Getting Started
+A beautiful, modern quote generator built with [Next.js](https://nextjs.org), featuring a custom blend (light yellow/white) and dark theme toggle, smooth gradients, and a delightful user experience.
 
-First, run the development server:
+## ✨ Features
+
+- **Quote of the Day**: Fetches a random quote from a public API or local data.
+- **Topic Search**: Instantly discover inspiring quotes by topic (e.g., success, motivation, focus).
+- **Random Quote**: Get a random quote at any time.
+- **Copy to Clipboard**: Easily copy any quote.
+- **Custom Theme Toggle**: Switch between a warm blend (white/yellow) theme and a sleek dark mode, with a single click.
+- **Responsive & Accessible**: Works great on all devices and supports keyboard navigation.
+- **Modern UI**: Uses Tailwind CSS, gradients, and card effects for a polished look.
+
+## 🚀 Getting Started
+
+1. **Install dependencies:**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install # or yarn install, npm install, or bun install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Run the development server:**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev # or yarn dev, npm run dev, or bun dev
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. **Open your browser:**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Go to [http://localhost:3000](http://localhost:3000) to see the app in action.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🖌️ Customization
 
-## Learn More
+- **Theme Toggle**: Click the sun/moon button in the header to switch between blend and dark mode.
+- **Blend Theme**: The blend theme uses a white/yellow gradient for a warm, inviting look. Dark mode uses a classic dark palette.
+- **Gradients**: Main content and cards feature smooth gradients for visual appeal.
+- **Quotes Data**: Local quotes are stored in `src/data/quotes.json`. You can add or edit topics and quotes as needed.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org) (App Router)
+- [React 19](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com)
+- [DaisyUI](https://daisyui.com/) (for extra UI utilities)
+- [TypeScript](https://www.typescriptlang.org/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+- `src/app/` - Main app pages and API routes
+- `src/components/` - UI components (including ThemeButton)
+- `src/data/quotes.json` - Local quotes data
+- `src/styles/globals.css` - Global styles and custom theme utilities
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Deploy easily on [Vercel](https://vercel.com/) or your favorite platform:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+## 🙏 Credits
+
+- Quotes API: [type.fit/api/quotes](https://type.fit/api/quotes)
+- UI: Tailwind CSS, DaisyUI, and custom design
+
+---
+
+Enjoy your daily dose of inspiration! ✨

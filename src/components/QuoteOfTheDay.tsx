@@ -17,7 +17,7 @@ export default function QuoteOfTheDay() {
       const data = await res.json();
       if (data.error) throw new Error(data.error);
       setQuote({ text: data.text, author: data.author });
-    } catch (e) {
+    } catch {
       setError("Could not fetch quote. Please try again.");
     } finally {
       setLoading(false);
@@ -40,7 +40,7 @@ export default function QuoteOfTheDay() {
             <span className="text-red-500">{error}</span>
           ) : quote ? (
             <>
-              <span>"{quote.text}"</span>
+              <span>&quot;{quote.text}&quot;</span>
               <span className="mt-2 text-base not-italic font-normal text-gray-500 dark:text-gray-400">— {quote.author}</span>
             </>
           ) : null}
