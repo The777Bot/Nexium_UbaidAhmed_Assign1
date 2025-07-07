@@ -12,6 +12,16 @@ A beautiful, modern quote generator built with [Next.js](https://nextjs.org), fe
 - **Responsive & Accessible**: Works great on all devices and supports keyboard navigation.
 - **Modern UI**: Uses Tailwind CSS, gradients, and card effects for a polished look.
 
+## 🌐 Live Demo
+
+Check out the deployed app here: [https://nexium-ubaid-ahmed-assign1.vercel.app/](https://nexium-ubaid-ahmed-assign1.vercel.app/)
+
+## 🖼️ Screenshots
+
+| Blend (Light) Theme | Dark Theme |
+|--------------------|------------|
+| ![Overview 1](public/overview1.png) | ![Overview 2](public/overview2.png) |
+
 ## 🚀 Getting Started
 
 1. **Install dependencies:**
@@ -60,7 +70,6 @@ Deploy easily on [Vercel](https://vercel.com/) or your favorite platform:
 
 ## 🙏 Credits
 
-- Quotes API: [type.fit/api/quotes](https://type.fit/api/quotes)
 - UI: Tailwind CSS, DaisyUI, and custom design
 
 ---
