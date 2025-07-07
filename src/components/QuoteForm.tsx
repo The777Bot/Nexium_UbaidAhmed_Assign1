@@ -5,6 +5,7 @@ import quotesData from '@/data/quotes.json'
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import VoteButtons from "@/components/VoteButtons";
 
 // Updated quotesData to support authors
 const topics = quotesData.map(q => q.topic);
@@ -84,8 +85,10 @@ export function QuoteForm() {
         </form>
         <div className="space-y-4">
           {results.map((quote, idx) => (
-            <Card key={idx} className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 border-0 shadow-md">
-              <CardContent className="p-6 text-gray-800 dark:text-gray-100 text-lg font-medium italic flex items-center gap-2">
+            <Card key={idx} className="bg-gradient-to-br from-blue-50 to-purple-100 dark:from-gray-800 dark:to-gray-900 border-0 shadow-md rounded-xl">
+              <CardContent className="p-6 text-gray-800 dark:text-gray-100 text-lg font-medium italic flex items-center gap-4">
+                {/* Voting System - now on the left */}
+                <VoteButtons quote={quote.text} author={quote.author} />
                 <svg className="w-6 h-6 text-blue-400 dark:text-blue-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2a4 4 0 0 1 4-4h1V7a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h1m10 0v-2a4 4 0 0 1 4-4h1V7a4 4 0 0 0-4-4h-4a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h1" /></svg>
                 <span>{quote.text}</span>
                 {quote.author && (
