@@ -20,7 +20,7 @@
     "quotes": [
       "Push yourself, because no one else is going to do it for you.",
       "Great things never come from comfort zones.",
-      "Success doesn’t just find you. You have to go out and get it."
+      "Success doesn't just find you. You have to go out and get it."
     ]
   },
   {
@@ -44,7 +44,55 @@
     "quotes": [
       "Creativity is intelligence having fun.",
       "Creativity takes courage.",
-      "You can’t use up creativity. The more you use, the more you have."
+      "You can't use up creativity. The more you use, the more you have."
+    ]
+  },
+  {
+    "topic": "happiness",
+    "quotes": [
+      "Happiness is not something ready made. It comes from your own actions.",
+      "For every minute you are angry you lose sixty seconds of happiness.",
+      "Happiness depends upon ourselves."
+    ]
+  },
+  {
+    "topic": "wisdom",
+    "quotes": [
+      "The only true wisdom is in knowing you know nothing.",
+      "Turn your wounds into wisdom.",
+      "Wisdom is the reward you get for a lifetime of listening when you'd have preferred to talk."
+    ]
+  },
+  {
+    "topic": "courage",
+    "quotes": [
+      "Courage is not the absence of fear, but the triumph over it.",
+      "You cannot swim for new horizons until you have courage to lose sight of the shore.",
+      "It takes courage to grow up and become who you really are."
+    ]
+  },
+  {
+    "topic": "learning",
+    "quotes": [
+      "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+      "The beautiful thing about learning is that no one can take it away from you.",
+      "Learning never exhausts the mind."
+    ]
+  },
+  {
+    "topic": "kindness",
+    "quotes": [
+      "No act of kindness, no matter how small, is ever wasted.",
+      "Kindness is a language which the deaf can hear and the blind can see.",
+      "Carry out a random act of kindness, with no expectation of reward."
+    ]
+  },
+  {
+    "topic": "gratitude",
+    "quotes": [
+      "Gratitude turns what we have into enough.",
+      "Gratitude is not only the greatest of virtues, but the parent of all others.",
+      "Enjoy the little things, for one day you may look back and realize they were the big things."
     ]
   }
 ]

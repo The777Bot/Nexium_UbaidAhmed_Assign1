@@ -76,7 +76,7 @@ export function QuoteForm() {
             placeholder="Enter a topic (e.g. success, motivation)"
             value={topic}
             onChange={(e) => setTopic(e.target.value)}
-            className="flex-1"
+            className="flex-1 bg-white blend:bg-yellow-50 dark:bg-gray-900"
           />
           <Button type="submit" className="bg-gradient-to-r from-blue-600 to-purple-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:from-blue-700 hover:to-purple-600 transition-all text-lg">
             Get Quotes
